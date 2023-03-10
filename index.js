@@ -18,8 +18,10 @@ window.addEventListener("keyup", enterKey);
 
 //init
 textarea.value = "";
+
 command.innerHTML = textarea.value;
 
+//function to track if user clicks enter 
 function enterKey(e) {
   if (e.keyCode == 181) {
     document.location.reload(true);
@@ -27,7 +29,7 @@ function enterKey(e) {
     if (e.keyCode == 13) {
       commands.push(command.innerHTML);
       git = commands.length;
-      addLine("guest@webterm.com:~$ " + command.innerHTML, "no-animation", 0);
+      addLine("guest@webterm.com:~$ " + command.innerHTML, "color3", 0);
       switchCommands(command.innerHTML.toLowerCase());
       command.innerHTML = "";
       textarea.value = "";
@@ -44,8 +46,8 @@ function switchCommands(cmd) {
     case "whois":
       mimicType(whois, "color2 margin", 80);
       break;
-    case "whoami":
-      mimicType(whoami, "color2 margin", 80);
+    case "instruct":
+      mimicType(instruct, "color2 margin", 80);
       break;
     case "social":
       mimicType(social, "color2 margin", 80);
@@ -55,7 +57,7 @@ function switchCommands(cmd) {
       break;
     case "history":
       addLine("<br>", "", 0);
-      mimicType(commands, "color2", 80);
+      mimicType(commands, "command", 80);
       addLine("<br>", "command", 80 * commands.length + 50);
       break;
     case "clear":
@@ -69,12 +71,16 @@ function switchCommands(cmd) {
       break;
     // socials
     case "linkedin":
-      addLine("Opening LinkedIn...", "color2", 0);
+      addLine("Transferring to LinkedIn...", "color2", 0);
       newTab(linkedin);
       break;
     case "github":
-      addLine("Opening GitHub...", "color2", 0);
+      addLine("Transferring GitHub...", "color2", 0);
       newTab(github);
+      break;
+    case "email": 
+      addLine("Connecting to E-mail...", "color2", 0);
+      setTimeout(function(){window.open('mailto:treyrubino@icloud.com?subject=Lets Chat!&body=')}, 500);
       break;
     default:
       addLine("<span class=\"inherit\">Command not found. For a list of commands, type <span class=\"command\">'help'</span>.</span>", "error", 100);

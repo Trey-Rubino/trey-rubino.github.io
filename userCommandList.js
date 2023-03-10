@@ -1,4 +1,4 @@
-var linkedin = "https://www.linkedin.com/in/treyrubino/";
+var linkedin = "https://www.linkedin.com/in/trey-rubino-1133511b5/";
 var github = "https://github.com/trey-rubino/";
 
 whois = [
@@ -15,31 +15,35 @@ whois = [
   "<br>"
 ];
 
-whoami = [
-  "<br>",
-  "The question of 'Who Am I?' can only be answered by you. ",
-  "<br>"
-];
-
 social = [
   "<br>",
-  'linkedin       <a href="' + linkedin + '" target="_blank">linkedin/treyrubino' + "</a>",
-  'github         <a href="' + github + '" target="_blank">github/treyrubino' + "</a>",
+  '<span class="command">linkedin</span>       <a href="' + linkedin + '" target="_blank">linkedin/treyrubino' + "</a>",
+  '<span class="command">github</span>         <a href="' + github + '" target="_blank">github/treyrubino' + "</a>",
   "<br>"
 ];
 
 projects = [
   "<br>",
-  "Still curating... most projects are offline, on GitHub, or confidential.",
-  "<br>"
+  "New projects are always being created. They are either offline, private, or avaliable on Github :)",
+  "With that being said, here is some insider knowledge on whats coming soon...",
+  "<br>",
+  "<span class='project'>C++ Project</span> - Game creation with Unreal Engine 5 / SLD2 libraries.",
+  "<span class='project'>Javascript Project</span> - You are currently viewing it! Congrats.",
+  "<span class='project'>PHP Project</span> - Login system using PerconaSQL.",
+  "<br>",
+  "For access to private Github <span class='project'>projects</span>...",
+  "Send me an email with the <span class='command'>email</span> command!",
+  "<br>",
 ];
 
 help = [
   "<br>",
+  '<span class="command">instruct</span>        How to navigate',
   '<span class="command">whois</span>          Who is Trey Rubino?',
-  '<span class="command">whoami</span>         Who are you?',
+  '<span class="command">echo</span>           Display text after command',
   '<span class="command">social</span>         Display social networks',
   '<span class="command">projects</span>       View coding projects',
+  '<span class="command">email</span>          Send me an email!',
   '<span class="command">history</span>        View history of commands',
   '<span class="command">help</span>           You are master at this command',
   '<span class="command">clear</span>          Clear the terminal',
@@ -56,6 +60,17 @@ banner = [
   "   (_)  (_)    (____) (____)   (_)  (_)(___) (____) (_)(_) (_) (___) ",
   "                       __(_)                                         ",
   "                      (___)                                          ",
+  "<br>",
   '<span class="color2">Welcome to my interactive terminal syle portfolio.</span>',
   "<span class=\"color2\">To get started, type</span> <span class=\"command\">'help'</span><span class=\"color2\">.</span>",
+];
+
+instruct = [
+  "<br>",
+  "This site is created to mimic a computer terminal,", 
+  "meaning that you will not have to use your mouse to navigate / play within this website.",
+  "Whenever you see text is this <span class='command'>color</span>, that means it is a command.",
+  "Regular text is displayed with the color you are seeing now reading this sentence.",
+  "Make sure to play around. I've added various interactions, games, and pictures / visuals so please enjoy!",
+  "<br>",
 ];
