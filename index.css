@@ -35,9 +35,9 @@
     --line-height-normal: 1.7;
     --line-height-small: 1.2;
 
-    --body: #eee;
+    --body: #111625;
     --black: #000;
-    --pink: #008080;/*#ff3258;*/
+    --pink: #7477e1;/*#008080;/*#ff3258;*/
     --white: #f0e9f2;
     --white-1: #e5e5e6da;
 
@@ -74,7 +74,7 @@ body {
     font-weight: 400;
     color: var(--white-1);
     line-height: var(--line-height-normal);
-    background: var(--black);
+    background: var(--body);
     overflow-x: hidden;
 }
 
@@ -413,7 +413,7 @@ body:not(.user-is-tabbing) a:focus {
 
 .header {
     background: linear-gradient(rgba(0,0,0, 0.6), rgba(0,0,0, 0.6)), 
-        url('./images/mountain2.webp');
+        url('./images/mountains.jpg');
     height: 100vh;
     background-size: cover;
     background-position: center;
