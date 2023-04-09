@@ -37,7 +37,7 @@
 
     --body: #eee;
     --black: #000;
-    --pink: #ff3258;
+    --pink: #008080;/*#ff3258;*/
     --white: #f0e9f2;
     --white-1: #e5e5e6da;
 
@@ -498,7 +498,7 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .work__image-box {
-    margin-bottom: var(--gutter-normal);
+   margin-bottom: var(--gutter-normal);
     --g: 4px;     /* the gap */
     --b: 6px;    /* border thickness*/
     --c: var(--pink); /* the color */
@@ -511,8 +511,8 @@ body:not(.user-is-tabbing) a:focus {
       var(--_g1) var(--_p,125%) 100%,var(--_g2) 100% var(--_p, 25%);
     background-size: 200% var(--b),var(--b) 200%;
     cursor: pointer;
-    filter: grayscale(50%);
-    transition: .3s;
+    filter: grayscale(50%); 
+    cursor: pointer;
 }
 
 @media(min-width: 901px) {
@@ -533,6 +533,19 @@ body:not(.user-is-tabbing) a:focus {
     filter: grayscale(0%);
    cursor: pointer;
  }
+
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+ 
 /* --------------------------------------- */
 /* ----- Freelance ----- */
 /* --------------------------------------- */
@@ -592,12 +605,16 @@ body:not(.user-is-tabbing) a:focus {
     }
 }
 
+/* --------------------------------------- */
+/* ----- Progress ----- */
+/* --------------------------------------- */
+
 .progress-bar-fill {
     display: block;
-    height: 20px;
+    height: 30px;
     background-color: var(--pink);
     border-radius: 3px;
-    transition: width 500ms ease-in-out;
+    width: 1%;
 }
 
 /* --------------------------------------- */

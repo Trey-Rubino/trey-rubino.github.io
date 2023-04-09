@@ -1,17 +1,17 @@
 
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
- 
+  <!-- Put your site title here -->
   <title>
     Trey Rubino | A Developer based in the United States.
   </title>
 
   <meta name="description" content="Add small description of yourslef.">
+  <!-- Add some coding keywords below, Ex: (React, CSS etc) -->
   <meta name="keywords" content="Trey Rubino JS PHP C++" />
   <link rel="stylesheet" href="index.css" />
   <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>  
@@ -40,17 +40,17 @@
     <div class="header__text-box row">
       <div class="header__text">
         <h1 class="heading-primary">
-      
+          <!-- Replace the following name with your name -->
           <span>Trey Rubino</span>
         </h1>
-      
+        <!-- Put a small paragraph about yourself -->
         <p>Software / Web Developer based in the United States.
           <br> I love <span class="auto-type"></span>
         </p>
 
         <script type="text/javascript">
           var typed = new Typed(".auto-type", {
-            strings: ["to Develop 🛠️", "to Design 🎨", "to Read 📚", "Open Source", "Technology 📱", "Coffee ☕️"],
+            strings: ["to Develop 🛠️", "to Code", "to Design 🎨", "to Read 📚", "Open Source", "Technology 📱", "Coffee ☕️"],
             typeSpeed: 150,
             backSpeed: 150,
             loop: true
@@ -71,13 +71,13 @@
         <h2>My Work</h2>
         <div class="work__boxes">
 
-          
+          <!-- Each div with the work__box class is a project. -->
 
           <div class="work__box">
             <div class="work__text">
               <h3>Terminal Portfolio</h3>
               <p>
-                Just for fun project to test my web development skills.
+                Just for fun project to test my web development skills
               </p>
               <ul class="work__list">
                 <li>HTML</li>
@@ -94,16 +94,16 @@
                 </a>
               </div>
             </div>
-            <div class="work__image-box">
+            <div class="work__image-box reveal">
               <a href="https://github.com/Trey-Rubino?tab=repositories"><img src="./images/terminal-portfolio.png" class="work__image" alt="Project 1" /></a>
             </div>
           </div>
 
           <div class="work__box">
             <div class="work__text">
-              <h3>OOP Login System</h3>
+              <h3>User Login System</h3>
               <p>
-                Simple OOP user login system. 
+                Simple OOP user login system 
               </p>
               <ul class="work__list">
                 <li>PHP</li>
@@ -121,7 +121,7 @@
                 </a>
               </div>
             </div>
-            <div class="work__image-box">
+            <div class="work__image-box reveal">
               <a href="https://github.com/Trey-Rubino/login_system"><img src="./images/login.png" class="work__image" alt="Project 1" /></a>
             </div>
           </div>
@@ -150,16 +150,16 @@
                 </a>
               </div>
             </div>
-            <div class="work__image-box">
+            <div class="work__image-box reveal">
               <a href="https://github.com/Trey-Rubino?tab=repositories"><img src="./images/employee.png" class="work__image" alt="Project 3" /></a>
             </div>
           </div>
 
           <div class="work__box">
             <div class="work__text">
-              <h3>Break Out Game</h3>
+              <h3>Break Out</h3>
               <p>
-                Browser game using HTML5 Canvas.
+                Browser game using HTML5 Canvas
               </p>
               <ul class="work__list">
                 <li>JavaScript</li>
@@ -176,13 +176,16 @@
                 </a>
               </div>
             </div>
-            <div class="work__image-box">
+            <div class="work__image-box reveal">
               <a href="https://github.com/Trey-Rubino?tab=repositories"><img src="./images/breakout.png" class="work__image" alt="Project 3" /></a>
             </div>
           </div>
         </div>
       </div>
     </section>
+
+     <!-- ***** Clients ***** -->
+
     <section id="clients" class="clients">
       <div class="row">
         <h2>Freelance</h2>
@@ -201,17 +204,17 @@
         <h2>About Me</h2>
         <div class="about__content">
           <div class="about__text">
-           
+            <!-- Replace the below paragraph with info about yourself -->
             <p>
               Full-time programmer and full-time CS student with a passion for tech.
               I strive for greatness whether it's during work / school or just a fun side project.
               You can find much more infomation on my Resume with the link below!
             </p>
-        
+            <!-- Provide a link to your resume -->
             <a href="#" class="btn">My Resume</a>
           </div>
-          <div class="about__photo-container">
-    
+          <div class="about__photo-container reveal">
+            <!-- Add a nice photo of yourself -->
             <img class="about__photo" src="./images/mountains.jpg" alt="" />
           </div>
         </div>
@@ -222,25 +225,24 @@
         <h2>Language Progress</h2>
         <div class="about__content">
           <div class="about__text">
-  
+            <!-- Replace the below paragraph with info about yourself -->
             <p>
               I use various languages daily for work and school. Here you can see my level in some of my most used languages. My favorite language is C++ where I use the langauge for game / application development!
-              PHP is a close second, I love the ease of use and functionality PHP has to offer, even with it being an older langauge. 
+              PHP is a close second, I love the ease of use and functionallity PHP has to offer, even with it being an older langauge. 
             </p>
-        
-            <a href="#" class="btn">See Progress</a>
+            <a href="#progress" class="btn" onclick="moveProgressBars()">See Progress</a>
           </div>
           <div class="about__photo-container">
-            <div class="progress-bar">
-              <span class="progress-bar-fill" style="width: 90%;"></span>
+            <div id="progress-bar">
+              <span class="progress-bar-fill" id="1"></span>
               <h4>C++ - Advanced</h4>
-              <span class="progress-bar-fill" style="width: 60%;"></span>
+              <span class="progress-bar-fill" id="2"></span>
               <h4>JavaScript - Intermediate</h4>
-              <span class="progress-bar-fill" style="width: 80%;"></span>
+              <span class="progress-bar-fill" id="3"></span>
               <h4>PHP - Advanced</h4>
-              <span class="progress-bar-fill" style="width: 20%;"></span>
-              <h4>C# - Beginner</h4>
-              <span class="progress-bar-fill" style="width: 50%;"></span>
+              <span class="progress-bar-fill" id="4"></span>
+              <h4>C# - Begineer</h4>
+              <span class="progress-bar-fill" id="5"></span>
               <h4>SQL - Intermediate</h4>
             </div>
           </div>
@@ -271,8 +273,8 @@
           will do my best to respond back. The quickest way to reach out to
           me is via an email.
         </p>
-    
-        <a href="mailto:treyrubino@icloud.com" class="btn">Email Me!</a>
+        <!-- Replace the email with yours -->
+        <a href="mailto:treyrubino@icloud.com?subject=Lets Chat! 😁 &body=" class="btn">Email Me!</a>
       </div>
     </div>
   </section>
@@ -281,7 +283,7 @@
 
   <footer role="contentinfo" class="footer">
     <div class="row">
-
+      <!-- Update the links to point to your accounts -->
       <ul class="footer__social-links">
         <li class="footer__social-link-item">
           <a href="https://github.com/Trey-Rubino" title="Link to Github Profile">
@@ -295,12 +297,11 @@
         </li>
       </ul>
 
-      
       <p>
-          &copy; 2020 - Template designed by <a href="https://nisar.dev">Nisar</a>
-        </p>
+       &copy; 2020 Designed by Nisar
+       </p>
       <p>
-         2023 - Developed by <a href="https://www.linkedin.com/in/trey-rubino-1133511b5/" class="link">Trey Rubino</a>
+       2023 Developed by <a href="https://www.linkedin.com/in/trey-rubino-1133511b5/" class="link">Trey Rubino</a>
       </p>
     </div>
   </footer>
