@@ -26,11 +26,10 @@
       <nav class="nav" role="navigation">
         <ul class="nav__items">
           <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-          <li class="nav__item"><a href="#clients" class="nav__link">Freelance</a></li>
-          <li class="nav__item"><a href="#progress" class="nav__link">Progress</a></li>
           <li class="nav__item">
             <a href="#about" class="nav__link">About</a>
           </li>
+          <li class="nav__item"><a href="#clients" class="nav__link">Services</a></li>
           <li class="nav__item">
             <a href="#contact" class="nav__link">Contact</a>
           </li>
@@ -184,22 +183,9 @@
       </div>
     </section>
 
-     <!-- ***** Clients ***** -->
+     <!-- ***** About ***** -->
 
-    <section id="clients" class="clients">
-      <div class="row">
-        <h2>Freelance</h2>
-        <div class="client__logos">
-          <a href="#"><img src="./images/fivverr.png" class="client__logo"></a>
-          <a href="#"><img src="./images/Freelancer_logo.png" class="client__logo"></a>
-          <a href="#"><img src="./images/upwork.png" class="client__logo"></a>
-        </div>
-      </div>
-    </section>
-
-    <!-- ***** About ***** -->
-
-    <section class="about" id="about">
+     <section class="about" id="about">
       <div class="row">
         <h2>About Me</h2>
         <div class="about__content">
@@ -218,36 +204,57 @@
             <img class="about__photo" src="./images/mountains.jpg" alt="" />
           </div>
         </div>
+  
     </section>
-
+  
     <section class="progress" id="progress">
       <div class="row">
-        <h2>Language Progress</h2>
-        <div class="about__content">
-          <div class="about__text">
-            <!-- Replace the below paragraph with info about yourself -->
-            <p>
-              I use various languages daily for work and school. Here you can see my level in some of my most used languages. My favorite language is C++ where I use the langauge for game / application development!
-              PHP is a close second, I love the ease of use and functionallity PHP has to offer, even with it being an older langauge. 
-            </p>
-            <a href="#progress" class="btn" onclick="moveProgressBars()">See Progress</a>
-          </div>
-          <div class="about__photo-container">
+        <h2>Skills</h2>
             <div id="progress-bar">
-              <span class="progress-bar-fill" id="1"></span>
-              <h4>C++ - Advanced</h4>
-              <span class="progress-bar-fill" id="2"></span>
-              <h4>JavaScript - Intermediate</h4>
-              <span class="progress-bar-fill" id="3"></span>
-              <h4>PHP - Advanced</h4>
-              <span class="progress-bar-fill" id="4"></span>
-              <h4>C# - Begineer</h4>
-              <span class="progress-bar-fill" id="5"></span>
-              <h4>SQL - Intermediate</h4>
+              <p>C++ - <span class="percent">70%</span></p>
+              <div class="progress-bar-fill">
+                <div class="bar C" id="1"></div>
+              </div>
+              <p>JavaScript - <span class="percent">50%</span></p>
+              <div class="progress-bar-fill">
+                <div class="bar JS" id="2"></div>
+              </div>
+              <p>PHP - <span class="percent">60%</span></p>
+              <div class="progress-bar-fill">
+                <div class="bar PHP" id="3"></div>
+              </div>
+              <p>C# - <span class="percent">20%</span></p>
+              <div class="progress-bar-fill">
+                <div class="bar CS" id="4"></div>
+              </div>
+              <p>SQL - <span class="percent">40%</span></p>
+              <div class="progress-bar-fill">
+                <div class="bar SQL" id="5"></div>
+              </div>
+              <p>Python - <span class="percent">30%</span></p>
+              <div class="progress-bar-fill">
+                <div class="bar Python" id="6"></div>
+              </div>
             </div>
-          </div>
+            <br>
+            <a class="btn" onclick="moveProgressBars()">See Progress</a>
         </div>
+        
     </section>
+
+     <!-- ***** Clients ***** -->
+
+    <section id="clients" class="clients">
+      <div class="row">
+        <h2>Services</h2>
+        <div class="client__logos">
+          <a href="#"><img src="./images/fivverr.png" class="client__logo"></a>
+          <a href="#"><img src="./images/Freelancer_logo.png" class="client__logo"></a>
+          <a href="#"><img src="./images/upwork.png" class="client__logo"></a>
+        </div>
+      </div>
+    </section>
+   
   </main>
   <!-- ***** Contact ***** -->
 
@@ -278,33 +285,6 @@
       </div>
     </div>
   </section>
-
-  <!-- ***** Footer ***** -->
-
-  <footer role="contentinfo" class="footer">
-    <div class="row">
-      <!-- Update the links to point to your accounts -->
-      <ul class="footer__social-links">
-        <li class="footer__social-link-item">
-          <a href="https://github.com/Trey-Rubino" title="Link to Github Profile">
-            <img src="./images/github.svg" class="footer__social-image" alt="Github">
-          </a>
-        </li>
-        <li class="footer__social-link-item">
-          <a href="https://www.linkedin.com/in/trey-rubino-1133511b5/">
-            <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
-          </a>
-        </li>
-      </ul>
-
-      <p>
-       &copy; 2020 Designed by Nisar
-       </p>
-      <p>
-       2023 Developed by <a href="https://www.linkedin.com/in/trey-rubino-1133511b5/" class="link">Trey Rubino</a>
-      </p>
-    </div>
-  </footer>
 
   <a href="#top" class="back-to-top" title="Back to Top">
     <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>

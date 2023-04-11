@@ -70,23 +70,27 @@ function progress(idName) {
   var temp;
   switch(idName) {
     case 1 : {
-      temp = 90;
+      temp = 70;
       break;
     }
     case 2 : {
-      temp = 60;
+      temp = 50;
       break;
     }
     case 3 : {
-      temp = 80;
+      temp = 60;
       break;
     }
     case 4 : {
       temp = 20;
       break;
     }
+    case 5 : {
+      temp = 40;
+      break;
+    }
     default : {
-      temp = 50;
+      temp = 30;
       break;
     }
   }
@@ -99,13 +103,16 @@ function progress(idName) {
     } else {
       width++;
       bars.style.width = width + "%";
-      bars.innerHTML = width + "%";
     }
   }
 }
 
 function moveProgressBars() {
-  for (var i = 1; i <= 5; i++) {
+  var percent = document.querySelectorAll('.percent');
+  for(var i = 0; i < percent.length; i++) {
+    percent[i].style.display = "inline";
+  }
+  for (var i = 1; i <= 6; i++) {
     progress(i);
   }
 }
