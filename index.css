@@ -497,22 +497,12 @@ body:not(.user-is-tabbing) a:focus {
     transform: scale(1.2);
 }
 
-.work__image-box {
-   margin-bottom: var(--gutter-normal);
-    --g: 4px;     /* the gap */
-    --b: 6px;    /* border thickness*/
-    --c: var(--pink); /* the color */
-    padding: calc(var(--g) + var(--b));
-    --_c: #0000 0 25%, var(--c) 0 50%;
-    --_g1: repeating-linear-gradient(90deg ,var(--_c)) repeat-x;
-    --_g2: repeating-linear-gradient(180deg,var(--_c)) repeat-y;
-    background:
-      var(--_g1) var(--_p, 25%) 0   ,var(--_g2) 0    var(--_p,125%),
-      var(--_g1) var(--_p,125%) 100%,var(--_g2) 100% var(--_p, 25%);
-    background-size: 200% var(--b),var(--b) 200%;
-    cursor: pointer;
-    filter: grayscale(50%); 
-    cursor: pointer;
+.work__image {
+    transition: transform 1s;
+}
+.work__image:hover {
+    transform:scale(1.1);
+   cursor: pointer;
 }
 
 @media(min-width: 901px) {
@@ -528,12 +518,6 @@ body:not(.user-is-tabbing) a:focus {
     }
 }
 /* Work in Progress */
-.work__image-box:hover{
-    --_p: 75%;
-    filter: grayscale(0%);
-   cursor: pointer;
- }
-
 .reveal {
     position: relative;
     transform: translateY(150px);
@@ -582,6 +566,7 @@ body:not(.user-is-tabbing) a:focus {
     flex-direction: row-reverse;
     align-items: center;
 }
+
 
 @media(max-width: 900px) {
     .about__content {
@@ -648,6 +633,12 @@ body:not(.user-is-tabbing) a:focus {
 }
 .Python {
     background-color: #FFD43B;
+}
+.CSS {
+    background-color: #264de4;
+}
+.HTML {
+    background-color: #f06529;
 }
 
 /* --------------------------------------- */

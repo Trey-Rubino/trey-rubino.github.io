@@ -89,8 +89,16 @@ function progress(idName) {
       temp = 40;
       break;
     }
-    default : {
+    case 6 : {
       temp = 30;
+      break;
+    }
+    case 7 : {
+      temp = 70;
+      break;
+    }
+    default : {
+      temp = 50;
       break;
     }
   }
@@ -112,7 +120,7 @@ function moveProgressBars() {
   for(var i = 0; i < percent.length; i++) {
     percent[i].style.display = "inline";
   }
-  for (var i = 1; i <= 6; i++) {
+  for (var i = 1; i <= 8; i++) {
     progress(i);
   }
 }
