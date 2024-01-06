@@ -2,4 +2,4 @@
 ## Work in progress...
 
 ### End Goal
-fully function terminal webpage where the user can create files, change color schemes, and play mini console game 
+fully function personal portfolio displaying achievements
